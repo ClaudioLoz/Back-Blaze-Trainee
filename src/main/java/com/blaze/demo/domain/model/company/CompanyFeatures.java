@@ -9,11 +9,11 @@ public class CompanyFeatures extends CompanyBaseModel {
     private static final int MAX_INVENTORY_PER_SHOP = 10; // First one is the "safe"
     private static final int DEFAULT_TERMINALS = 2;
     private static final int DEFAULT_SHOPS = 1;
-    private static final int DEFAULT_EMPLOYEES = 50;
+    private static final int DEFAULT_EMPLOYEES = 25;
+    private int maxInventories = MAX_INVENTORY_PER_SHOP;
     private int maxTerminals = DEFAULT_TERMINALS;
     private int maxShop = DEFAULT_SHOPS;
     private int maxEmployees = DEFAULT_EMPLOYEES;
-    private int maxInventories = MAX_INVENTORY_PER_SHOP;
 
     private boolean enableMasterCatalog = false;
 

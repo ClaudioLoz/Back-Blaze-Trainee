@@ -13,7 +13,6 @@ public class Address extends CompanyBaseModel {
     private String city = "";
     private String zipCode = "";
     private String address = "";
-    private String addressLine2 = "";
     private BigDecimal latitude;
     private BigDecimal longitude;
 
@@ -30,17 +29,14 @@ public class Address extends CompanyBaseModel {
         if (zipCode == null) {
             zipCode = "";
         }
-        if (addressLine2 == null) {
-            addressLine2 = "";
-        }
+
     }
 
     public boolean isValid() {
         return StringUtils.isNotBlank(address)
                 || StringUtils.isNotBlank(city)
                 || StringUtils.isNotBlank(state)
-                || StringUtils.isNotBlank(zipCode)
-                || StringUtils.isNotBlank(addressLine2);
+                || StringUtils.isNotBlank(zipCode);
     }
 
     public String getNumber() {
@@ -102,22 +98,11 @@ public class Address extends CompanyBaseModel {
         this.zipCode = zipCode;
     }
 
-    public String getAddressLine2() {
-        return addressLine2;
-    }
-
-    public void setAddressLine2(String addressLine2) {
-        this.addressLine2 = addressLine2;
-    }
 
     public String getAddressString() {
         StringBuilder sb = new StringBuilder();
         if (StringUtils.isNotBlank(address)) {
             sb.append(address.trim());
-        }
-        if (StringUtils.isNotBlank(addressLine2)) {
-            sb.append(StringUtils.isNotBlank(sb) ? " " : "");
-            sb.append(addressLine2.trim());
         }
         if (StringUtils.isNotBlank(city)) {
             sb.append(StringUtils.isNotBlank(sb) ? "," : "");
@@ -139,10 +124,6 @@ public class Address extends CompanyBaseModel {
         StringBuilder sb = new StringBuilder();
         if (StringUtils.isNotBlank(address)) {
             sb.append(address.trim());
-        }
-        if (StringUtils.isNotBlank(addressLine2)) {
-            sb.append(StringUtils.isNotBlank(sb) ? " " : "");
-            sb.append(addressLine2.trim());
         }
         if (StringUtils.isNotBlank(city)) {
             sb.append(StringUtils.isNotBlank(sb) ? ", " : "");
