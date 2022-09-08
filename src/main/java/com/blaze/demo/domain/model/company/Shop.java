@@ -85,7 +85,7 @@ public class Shop extends CompanyBaseModel {
     public void setAddress(Address address) {
         this.address = address;
     }
-    
+
     public boolean isActive() {
         return active;
     }
