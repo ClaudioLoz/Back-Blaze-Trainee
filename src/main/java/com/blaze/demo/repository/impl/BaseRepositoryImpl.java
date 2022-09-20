@@ -4,14 +4,13 @@ import com.blaze.demo.domain.MongoDb;
 import com.blaze.demo.domain.annotations.CollectionName;
 import com.blaze.demo.domain.model.generic.BaseModel;
 import com.blaze.demo.repository.BaseRepository;
-import com.blaze.demo.rest.SearchResult;
+import com.blaze.demo.rest.responses.SearchResult;
 import com.google.common.collect.Lists;
 import com.mongodb.DB;
 import org.bson.types.ObjectId;
 import org.joda.time.DateTime;
 import org.jongo.Jongo;
 import org.jongo.MongoCollection;
-import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.List;

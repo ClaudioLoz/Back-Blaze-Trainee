@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface ShopRepository extends CompanyBaseRepository<Shop>{
 // Shop registerShop (ShopRegisterRequest shopRegisterRequest);
 
+
 }

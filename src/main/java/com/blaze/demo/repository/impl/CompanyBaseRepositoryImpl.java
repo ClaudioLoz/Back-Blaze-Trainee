@@ -3,11 +3,10 @@ package com.blaze.demo.repository.impl;
 import com.blaze.demo.domain.MongoDb;
 import com.blaze.demo.domain.model.generic.CompanyBaseModel;
 import com.blaze.demo.repository.CompanyBaseRepository;
-import com.blaze.demo.rest.SearchResult;
+import com.blaze.demo.rest.responses.SearchResult;
 import com.google.common.collect.Lists;
 import org.bson.types.ObjectId;
 import org.joda.time.DateTime;
-import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.List;

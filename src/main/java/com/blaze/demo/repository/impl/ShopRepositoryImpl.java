@@ -16,8 +16,6 @@ public class ShopRepositoryImpl extends CompanyBaseRepositoryImpl<Shop> implemen
         super(Shop.class, mongoManager);
     }
 
-//    @Autowired
-//    private OrganizationRepository organizationRepository;
 
 
 }

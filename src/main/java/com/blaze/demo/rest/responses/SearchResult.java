@@ -1,8 +1,11 @@
-package com.blaze.demo.rest;
+package com.blaze.demo.rest.responses;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class was intended to be used in some crud tables, because there we need pagination but since time...
+ */
 public class SearchResult<T> {
     private List<T> values = new ArrayList<>();
     private int skip;

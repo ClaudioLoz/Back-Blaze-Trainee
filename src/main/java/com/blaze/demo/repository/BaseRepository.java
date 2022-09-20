@@ -1,12 +1,9 @@
 package com.blaze.demo.repository;
 
-import com.blaze.demo.domain.model.company.Shop;
 import com.blaze.demo.domain.model.generic.BaseModel;
-import com.blaze.demo.rest.SearchResult;
-import com.blaze.demo.rest.requests.ShopRegisterRequest;
+import com.blaze.demo.rest.responses.SearchResult;
 import org.bson.types.ObjectId;
 import org.jongo.MongoCollection;
-import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.List;

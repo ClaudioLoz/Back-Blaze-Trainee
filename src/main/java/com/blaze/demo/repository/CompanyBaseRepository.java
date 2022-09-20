@@ -1,9 +1,8 @@
 package com.blaze.demo.repository;
 
 import com.blaze.demo.domain.model.generic.CompanyBaseModel;
-import com.blaze.demo.rest.SearchResult;
+import com.blaze.demo.rest.responses.SearchResult;
 import org.bson.types.ObjectId;
-import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.List;
